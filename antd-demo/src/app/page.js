@@ -56,20 +56,6 @@ export default function PokerProbability() {
   // const calculateProbability = () => {
   //   setProbability(Math.random().toFixed(4));
   // };
-
-  // const calculateProbability = async () => {
-  //   const response = await fetch('http://127.0.0.1:5000/calculate', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/json' },
-  //     body: JSON.stringify({
-  //       hand: hand.filter(Boolean),
-  //       table: table.filter(Boolean),
-  //       num_opponents: 2
-  //     })
-  //   });
-  //   const data = await response.json();
-  //   setProbability(data.probability ? data.probability.toFixed(2) : "Error");
-  // };
   
   const calculateProbability = async () => {
     const formattedHand = hand.map(card => card?.replace('.png', '')); // Remove .png if it exists
